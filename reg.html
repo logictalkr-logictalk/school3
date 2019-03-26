@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>SMS-SignIn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .login{
+            background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+            margin-top: 6%;
+            padding: 3%;
+}
+.login-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.login-left input{
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.login-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+}
+.login-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 75%;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.login-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+.login .login-form{
+    padding: 10%;
+    margin-top: 10%;
+}
+.btnLogin{
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0062cc;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+<form method="post" class="post-form" action="./emp">
+    {% csrf_token %}
+    <div class="container login" >
+        <div class="row">
+            <div class="col-md-3 login-left">
+                <img src="https://media.giphy.com/media/PCLy6QBPVsKvS/giphy.gif" alt=""/>
+                <h3>Welcome To edbox</h3>
+            </div>
+            <div class="col-md-9 login-right">
+                <div class="row login-form" style=" padding-bottom: 0px; padding-top: 50px;">
+                    <div class="col-md-6" style="left: 150px;bottom: 50px;">
+                        <div class="form-group">
+                            <label for="un">Email</label>
+                            <input type="text" class="form-control" value="" >
+                        </div>
+                        <div class="form-group">
+                            <label for="pw">Password</label>
+                            <input type="text" class="form-control" value="" >
+                        </div>
+                        <input type="submit" class="btnLogin" value="Login" style="margin-right: 70px;">
+                    </div>
+                </div>
+                <div class="form-group" style=" margin-top: 0px; border-top-width: 30px; margin-bottom: 40px;">
+                    <h4 align="center"><a href="./Reg" style="margin-right: 30px;">Create account here</a></h4><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>
